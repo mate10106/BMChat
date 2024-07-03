@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, #051937, #003c5f, #006383, #008d9e, #2db7b1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.icon {
+  @apply w-5 h-5 cursor-pointer
+}
+
+.sendButton {
+  @apply bg-[#5183fe] text-white py-[10px] px-[20px] border-none rounded-[5px] cursor-pointer
+}
+
+.ownmessage {
+  @apply self-end bg-[#5183fe] p-5 rounded-xl
+}
+
+.message {
+  @apply max-w-[70%] flex p-5 bg-custom-rgba rounded-xl
+}
+
+.back-button {
+  @apply bg-blue-600 p-2 rounded-xl
+}
